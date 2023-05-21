@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("./reset.css");
+
+body {
+    font: normal 400 16px / 1.4em "Roboto", "sans-serif";
+    height: 100vh;
+}
