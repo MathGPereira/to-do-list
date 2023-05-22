@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class FormularioComponent {
 
+    atividades!: {id: number, atividade: string}
+
+    constructor() {}
+
     adicionaNovaAtividade(): void {
         console.log("Adicionei a nova atividade!")
     }
