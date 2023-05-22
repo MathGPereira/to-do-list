@@ -2,5 +2,5 @@
 
 body {
     font: normal 400 16px / 1.4em "Roboto", sans-serif;
-    height: 100vh;
+    min-height: 100vh;
 }
