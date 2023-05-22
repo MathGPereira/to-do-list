@@ -1,6 +1,7 @@
 .formulario {
     background-color: #F2F2F2;
     border-radius: 1em;
+    margin-bottom: 2.5em;
     padding: 2em;
     width: 80vw;
 }
@@ -31,4 +32,8 @@
 
 .formulario input:focus {
     outline: 3px solid #5f9ea0a8;
+}
+
+.atividades {
+    width: 80vw;
 }
