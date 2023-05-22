@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-atividade',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AtividadeComponent {
 
+    @Input() atividades: Array<{id: number, atividade: string}> = [
+        {
+            id: 1,
+            atividade: "Testando a primeira atividade"
+        }
+    ]
 }

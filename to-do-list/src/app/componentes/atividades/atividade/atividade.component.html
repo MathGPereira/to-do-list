@@ -1,6 +1,6 @@
-<div class="atividade">
-    <span>1</span>
-    <p>Fiz todos os afazeres</p>
+<div *ngFor="let atividade in atividades" class="atividade">
+    <span>{{ atividade.id }}</span>
+    <p>{{ atividade.atividade }}</p>
     <div class="icones">
         <i class="deletar"></i>
         <i class="alterar"></i>

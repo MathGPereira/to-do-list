@@ -53,5 +53,6 @@
 }
 
 .atividades {
+    box-sizing: border-box;
     width: 80vw;
 }
