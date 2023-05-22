@@ -1,6 +1,6 @@
 @import url("./reset.css");
 
 body {
-    font: normal 400 16px / 1.4em "Roboto", "sans-serif";
+    font: normal 400 16px / 1.4em "Roboto", sans-serif;
     height: 100vh;
 }
