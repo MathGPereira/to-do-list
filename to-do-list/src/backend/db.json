@@ -1,8 +1,16 @@
 {
   "atividades": [
     {
-      "atividade": "Tomar café da manhã",
+      "atividade": "Colocar ração para os cachorros",
       "id": 1
+    },
+    {
+      "atividade": "Lavar o meu carro",
+      "id": 2
+    },
+    {
+      "atividade": "Buscar as crianças na escola",
+      "id": 3
     }
   ]
 }

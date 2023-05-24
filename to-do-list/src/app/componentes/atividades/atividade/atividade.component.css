@@ -28,9 +28,9 @@
 
 .deletar::before {
     content: url("../../../../assets/icones/excluir.png");
-    margin-right: .5rem;
 }
 
 .alterar::before {
     content: url("../../../../assets/icones/editar.png");
+    margin-right: .5rem;
 }

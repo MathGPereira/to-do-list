@@ -1,6 +1,7 @@
 @import url("./reset.css");
 
 body {
+    background-color: #4682b4;
     font: normal 400 16px / 1.4em "Roboto", sans-serif;
     min-height: 100vh;
 }
