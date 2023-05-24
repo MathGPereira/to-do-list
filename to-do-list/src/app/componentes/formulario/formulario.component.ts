@@ -1,17 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ServiceService } from 'src/app/services/service.service';
 
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
   styleUrls: ['./formulario.component.css']
 })
-export class FormularioComponent {
+export class FormularioComponent implements OnInit {
 
-    atividades!: {id: number, atividade: string}
+    atividades: Array<{id: number, atividade: string}> = [];
 
-    constructor() {}
+    constructor(private service: ServiceService) {}
+
+    ngOnInit(): void {
+        this.adicionaNovaAtividade();
+    }
 
     adicionaNovaAtividade(): void {
-        console.log("Adicionei a nova atividade!")
+        this.service.getAll().subscribe(listaAtividades => {
+            listaAtividades.map(atividade => {
+                this.atividades.push(atividade);
+            });
+        });
     }
 }
