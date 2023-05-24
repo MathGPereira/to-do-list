@@ -1,7 +1,6 @@
 import { FormularioComponent } from './componentes/formulario/formulario.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ExcluirAtividadeComponent } from './componentes/atividades/excluir-atividade/excluir-atividade.component';
 
 const routes: Routes = [
     {
