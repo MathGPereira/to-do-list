@@ -7,5 +7,8 @@
     <button (click)="adicionaNovaAtividade()" type="button">Adicionar tarefa</button>
 </form>
 <div class="atividades">
-    <app-atividade [atividades]="atividades"></app-atividade>
+    <app-atividade [atividades]="atividades" *ngIf="atividades.length !== 0, else semItens"></app-atividade>
+    <ng-template #semItens>
+        <p class="sem-atividades">Não há nenhuma atividade na sua lista até o momento!</p>
+    </ng-template>
 </div>

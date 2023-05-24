@@ -56,3 +56,9 @@
     box-sizing: border-box;
     width: 80vw;
 }
+
+.sem-atividades {
+    color: #F2F2F2;
+    font-size: 26px;
+    text-align: center;
+}

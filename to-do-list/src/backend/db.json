@@ -1,16 +1,3 @@
 {
-  "atividades": [
-    {
-      "id": 1,
-      "atividade": "Testando atividade um"
-    },
-    {
-      "id": 2,
-      "atividade": "Testando atividade dois"
-    },
-    {
-      "id": 3,
-      "atividade": "Testando atividade três"
-    }
-  ]
+  "atividades": []
 }
