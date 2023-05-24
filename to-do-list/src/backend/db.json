@@ -1,3 +1,8 @@
 {
-  "atividades": []
+  "atividades": [
+    {
+      "atividade": "Tomar café da manhã",
+      "id": 1
+    }
+  ]
 }

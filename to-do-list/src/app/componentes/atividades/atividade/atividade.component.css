@@ -19,4 +19,18 @@
 .atividade p {
     color: #5f9ea0;
     font-size: 22px;
+    flex-grow: 1;
+}
+
+.deletar::before, .alterar::before {
+    cursor: pointer;
+}
+
+.deletar::before {
+    content: url("../../../../assets/icones/excluir.png");
+    margin-right: .5rem;
+}
+
+.alterar::before {
+    content: url("../../../../assets/icones/editar.png");
 }
