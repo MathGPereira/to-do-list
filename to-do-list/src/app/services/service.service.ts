@@ -14,4 +14,8 @@ export class ServiceService {
     getAll(): Observable<Array<{id: number, atividade: string}>> {
         return this.http.get<Array<{id: number, atividade: string}>>(this.url);
     }
+
+    post(atividade: string): Observable<string> {
+        return this.http.post<string>(this.url, {atividade});
+    }
 }

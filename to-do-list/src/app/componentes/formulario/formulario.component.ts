@@ -13,14 +13,18 @@ export class FormularioComponent implements OnInit {
     constructor(private service: ServiceService) {}
 
     ngOnInit(): void {
-        this.adicionaNovaAtividade();
+        this.mostraAtividades();
     }
 
-    adicionaNovaAtividade(): void {
+    mostraAtividades(): void {
         this.service.getAll().subscribe(listaAtividades => {
             listaAtividades.map(atividade => {
                 this.atividades.push(atividade);
             });
         });
+    }
+
+    adicionaNovaAtividade(): void {
+        this.service.post("atividade").subscribe();
     }
 }
