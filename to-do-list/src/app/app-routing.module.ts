@@ -12,10 +12,6 @@ const routes: Routes = [
     {
         path: "criarPensamento",
         component: FormularioComponent
-    },
-    {
-        path: "excluirPensamento",
-        component: ExcluirAtividadeComponent
     }
 ];
 
