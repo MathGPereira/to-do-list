@@ -9,6 +9,7 @@ import { ServiceService } from 'src/app/services/service.service';
 export class FormularioComponent implements OnInit {
 
     atividades: Array<{id: number, atividade: string}> = [];
+    inputAtividades!: HTMLInputElement;
 
     constructor(private service: ServiceService) {}
 
@@ -17,6 +18,8 @@ export class FormularioComponent implements OnInit {
     }
 
     mostraAtividades(): void {
+        this.atividades = [];
+
         this.service.getAll().subscribe(listaAtividades => {
             listaAtividades.map(atividade => {
                 this.atividades.push(atividade);
@@ -25,6 +28,12 @@ export class FormularioComponent implements OnInit {
     }
 
     adicionaNovaAtividade(): void {
-        this.service.post("atividade").subscribe();
+        this.inputAtividades = document.querySelector("[data-atividade]") as HTMLInputElement;
+
+        this.service.post(this.inputAtividades.value).subscribe();
+        this.mostraAtividades();
+
+        this.inputAtividades.value = "";
+        this.inputAtividades.focus;
     }
 }
